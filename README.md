@@ -8,6 +8,8 @@ It was evening, there was nothing to do, and I thought: why not make a "package"
 
 Just downloading libraries is boring. Therefore, a package is a `python` script that can do some useful (or not so useful) stuff: generate code, prepare wrappers, pull binaries, anything.
 
+[list of available packages](https://github.com/ShadowCHuyna/pcpm-packages)
+
 ---
 ## Table of Contents
 * [Why](#why)

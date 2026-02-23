@@ -2,7 +2,7 @@ from typing import TypedDict, Required, NotRequired
 from pathlib import Path
 from typing import Callable
 
-PKGS_MIRROR = "http://pcpmirror.potatom.ru/packages"
+PKGS_MIRROR = "https://pcpmirror.potatom.ru/packages"
 
 PKGS_PATH = Path("./pkgs") 
 ROOT_PATH = Path(".")
