@@ -93,7 +93,7 @@ def get_bin_suffix() -> str:
 
 def check_config(root: Path = Path(".")) -> bool:
     if not os.path.exists(root/"config.json"):
-        logger.error(f"'{root/"config.json"}' не найден!")
+        logger.error(f"'{root/'config.json'}' не найден!")
         return False
     return True
     
@@ -288,7 +288,7 @@ def build_sf_libs(headers: list[Path], defines: list[str]) -> list[Path] | None:
 
 def check_pkg_config(pkg: str) -> bool:
     if not os.path.exists(PKGS_PATH/pkg/"package.json"):
-        logger.warning(f"'{PKGS_PATH/pkg/"package.json"}' не найден!")
+        logger.warning(f"'{PKGS_PATH/pkg/'package.json'}' не найден!")
         return False
     return True
 

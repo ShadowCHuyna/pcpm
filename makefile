@@ -5,8 +5,8 @@ PYTHON ?= python3
 
 install:
 	@echo "Installing $(PACKAGE)..."
-	@$(PYTHON) -m pip install --upgrade --break-system-packages .
+	@$(PYTHON) -m pip install --upgrade --break-system-packages . --user
 
 uninstall:
 	@echo "Uninstalling $(PACKAGE)..."
-	@$(PYTHON) -m pip uninstall --yes --break-system-packages $(PACKAGE)
+	@$(PYTHON) -m pip uninstall --yes --break-system-packages $(PACKAGE) --user

@@ -15,5 +15,5 @@ def set_template():
     if config_dir is None: return
 
     write_config(config, config_dir/"config.json")
-    logger.info(f"создан template в: {config_dir/"config.json"}")
+    logger.info(f"создан template в: {config_dir/'config.json'}")
     
