@@ -10,4 +10,4 @@ dependencies = []
 authors = [{name = "sch", email="sch@potatom.ru"}]
 
 [project.scripts]
-pcpm = "pcpm.main:main"
+pcpm = "pcpm.__main__:main"
