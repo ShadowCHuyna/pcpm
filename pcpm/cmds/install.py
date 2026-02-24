@@ -13,7 +13,7 @@ logger = logging.getLogger(__name__)
 def download_pkg(p: str, config: Config) -> bool:
     flag: bool = False
 
-    mirrors: list[str] = [PKGS_MIRROR] + config.get("mirrors", [])
+    mirrors: list[str] = config.get("mirrors", []) + [PKGS_MIRROR]
     for m in mirrors:
         if m.startswith(("http", "https")):
             if download(f"{m}/{p}.tar.gz", f"{PKGS_PATH}/{p}.tar.gz"):
